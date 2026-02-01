@@ -76,6 +76,27 @@
             bindings = <&kp EQUAL &kp GT>;
             label = "RIGHT_ARROW";
         };
+
+        kakko_1: kakko_1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LBKT &kp RBKT &kp LEFT_ARROW>;
+            label = "KAKKO_1";
+        };
+
+        kakko_2: kakko_2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LPAR &kp RPAR &kp LEFT_ARROW>;
+            label = "KAKKO_2";
+        };
+
+        kakko_3: kakko_3 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LBRC &kp RBRC &kp LEFT_ARROW>;
+            label = "KAKKO_3";
+        };
     };
 
     behaviors {
@@ -114,10 +135,10 @@
 
         NUM {
             bindings = <
-&trans  &kp HASH    &kp PERCENT      &kp AMPERSAND  &right_arrow                      &kp CARET         &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp PLUS
-&trans  &kp DOLLAR  &kp EXCLAMATION  &kp QMARK      &trans        &trans      &trans  &kp EXCLAMATION   &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp MINUS
-&trans  &kp CARET   &kp AT           &trans         &kp LANG2     &trans      &trans  &kp LEFT_BRACKET  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_0
-&trans  &trans      &trans           &trans         &trans        &trans      &trans  &trans                                                      &kp PIPE
+&trans  &kp HASH    &kp PERCENT      &kp AMPERSAND  &right_arrow                      &kakko_1  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp PLUS
+&trans  &kp DOLLAR  &kp EXCLAMATION  &kp QMARK      &trans        &trans      &trans  &kakko_2  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp MINUS
+&trans  &kp CARET   &kp AT           &trans         &kp LANG2     &trans      &trans  &kakko_3  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_0
+&trans  &trans      &trans           &trans         &trans        &trans      &trans  &trans                                              &kp PIPE
             >;
         };
 
