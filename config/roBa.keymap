@@ -10,6 +10,7 @@
 
 &trackball {
     // automouse-layer = <4>;
+
     scroll-layers = <5>;
 
     // arrows {
@@ -137,7 +138,7 @@
             bindings = <
 &trans  &kp HASH    &kp PERCENT      &kp AMPERSAND  &right_arrow                      &kakko_1  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp PLUS
 &trans  &kp DOLLAR  &kp EXCLAMATION  &kp QMARK      &trans        &trans      &trans  &kakko_2  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp MINUS
-&trans  &kp CARET   &kp AT           &trans         &kp LANG2     &trans      &trans  &kakko_3  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_0
+&trans  &kp CARET   &kp AT           &kp EQUAL      &kp LANG2     &trans      &trans  &kakko_3  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_0
 &trans  &trans      &trans           &trans         &trans        &trans      &trans  &trans                                              &kp PIPE
             >;
         };
