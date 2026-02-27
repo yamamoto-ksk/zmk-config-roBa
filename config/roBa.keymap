@@ -140,10 +140,10 @@
 
         ARROW {
             bindings = <
-&trans  &trans          &kp UP_ARROW    &kp EXCL         &kp QUESTION                      &trans          &kp F7   &kp F8    &kp F9     &kp BACKSLASH
-&trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans        &trans      &trans  &kp ENTER       &kp F10  &kp HOME  &kp UNDER  &kp BACKSPACE
-&trans  &trans          &trans          &trans           &trans        &trans      &trans  &kp LANGUAGE_1  &kp DEL  &kp END   &kp ASTRK  &kp COLON
-&trans  &trans          &trans          &trans           &trans        &trans      &trans  &trans                                        &trans
+&trans  &trans          &kp UP_ARROW    &kp EXCL         &kp QUESTION                      &trans          &kp F7               &kp F8              &kp F9     &kp BACKSLASH
+&trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans        &trans      &trans  &kp ENTER       &mt RIGHT_SHIFT F10  &mt RIGHT_GUI HOME  &kp UNDER  &kp BACKSPACE
+&trans  &trans          &trans          &trans           &trans        &trans      &trans  &kp LANGUAGE_1  &kp DEL              &kp END             &kp ASTRK  &kp COLON
+&trans  &trans          &trans          &trans           &trans        &trans      &trans  &trans                                                              &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
@@ -154,7 +154,7 @@
 &trans              &trans                  &mkp MB3                 &kp LG(R)            &trans                        &trans    &trans    &trans    &trans     &trans
 &kp LC(LEFT_ARROW)  &kp LA(LG(LEFT_ARROW))  &kp LA(LG(RIGHT_ARROW))  &kp LC(RIGHT_ARROW)  &trans    &trans      &trans  &trans    &mkp MB4  &mkp MB5  &kp LG(D)  &kp LG(W)
 &trans              &trans                  &kp LG(T)                &mkp MB1             &mkp MB2  &trans      &trans  &trans    &mo 5     &trans    &mail      &trans
-&trans              &trans                  &trans                   &trans               &trans    &trans      &trans  &mkp MB1                                 &pass
+&trans              &trans                  &trans                   &trans               &trans    &trans      &trans  &mkp MB3                                 &pass
             >;
         };
 
